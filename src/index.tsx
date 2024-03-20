@@ -1,20 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
-import Rocket from './components/Rocket'
-import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./components/App";
+import Rocket from "./components/Rocket";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-ReactDOM.render( 
+ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App/>}/>
-      <Route path="/:id" element={<Rocket/>}/>        
-    </Routes>  
+      <Route path="/" element={<App />} />
+      <Route path="/:id" element={<Rocket />} />
+      <Route path="/test" element={<div />} />
+    </Routes>
   </BrowserRouter>,
-    
-  document.getElementById('root')
+
+  document.getElementById("root"),
 );
 
 // If you want to start measuring performance in your app, pass a function
