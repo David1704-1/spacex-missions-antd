@@ -11,7 +11,6 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/:id" element={<Rocket />} />
-      <Route path="/test" element={<div />} />
     </Routes>
   </BrowserRouter>,
 
